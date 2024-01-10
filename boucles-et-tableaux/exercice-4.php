@@ -12,8 +12,8 @@ $users = [
 ];
 
 foreach($users as $key => $name ){
-    print_r ($name["firstName"] . " ");
-    print_r ($name["lastName"]);
+    echo $name["firstName"] . " ";
+    echo $name["lastName"];
     echo "<br>";
 };
 
