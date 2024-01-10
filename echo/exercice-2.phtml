@@ -11,19 +11,35 @@
 		<?php 
         $number1 = 42;
         $number2 = 33;
-        
-    if($number1 %2 === 0)
-        {
+       ?> 
+    <?php
+            if($number1 %2 === 0)
+            {
+                ?>
+                <p class="red"><?= $number1 ?></p>
+                <?php
+            }
+            else
+            {
+                ?>
+                <p class="blue"><?= $number1 ?></p>
+                <?php
+            }
         ?>
-            <p class="red"> <?php echo $number1; ?> </p>
         <?php
-        } 
-        else 
+        if($number2 %2 === 0)
         {
-        ?> 
-            <p class="blue"><?php echo $number2; ?> </p>
-        <?php
+            ?>
+            <p class="red"><?= $number2 ?></p>
+            <?php
         }
-       ?>
+        else
+        {
+            ?>
+            <p class="blue"><?= $number2 ?></p>
+            <?php
+        }
+        ?>
 	</body>
 </html>
+
