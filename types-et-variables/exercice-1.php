@@ -6,7 +6,7 @@ echo $nb;
 $str = '42';
 echo $str;
 
-$nbstr = (str)"$nb"; 
+$nbstr = "$nb"; 
 echo $nbstr;
 
 ?>
